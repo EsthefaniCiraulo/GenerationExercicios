@@ -4,7 +4,6 @@ programa
 	funcao inicio()
 	{
 		inteiro listaDeNumeros[10] = {2,5,1,3,4,9,7,8,10,6}
-		inteiro listaOrdenada[10]
 		inteiro contadorInterno, contadorExterno, troca = 0
 
 		para(contadorExterno = 0; contadorExterno<10;contadorExterno++)
