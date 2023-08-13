@@ -1,21 +1,22 @@
 package produto.model;
 
-public class Produto {
+public abstract class Produto {
 
 	private int codigo;
 	private double valor;
 	private String nome;
 	private String descricao;
 	private Boolean ativa;
-	private double peso;
+	private int tipo;
 
-	private Produto(int codigo, double valor, String nome, String descricao, Boolean ativa, double peso) {
+
+	public Produto(int codigo, double valor, String nome, String descricao, Boolean ativa, int tipo) {
 		this.codigo = codigo;
 		this.valor = valor;
 		this.nome = nome;
 		this.descricao = descricao;
 		this.ativa = ativa;
-		this.peso = peso;
+		this.setTipo(tipo);
 	}
 
 	public int getCodigo() {
@@ -28,6 +29,11 @@ public class Produto {
 
 	public double getValor() {
 		return valor;
+	
+	}
+	
+	public String getValorFormatado() {
+		return "R$"+this.valor;
 	}
 
 	public void setValor(double valor) {
@@ -58,18 +64,6 @@ public class Produto {
 		this.ativa = ativa;
 	}
 
-	public double getPeso() {
-		return peso;
-	}
-
-	public void setPeso(double peso) {
-		this.peso = peso;
-	}
-
-	public static Produto NovoProduto(int codigo, double valor, String nome, String descricao, Boolean ativa,
-			double peso) {
-		return new Produto(codigo, valor, nome, descricao, ativa, peso);
-	}
 
 	public void ExcluirProduto() {
 		setAtiva(false);
@@ -84,5 +78,13 @@ public class Produto {
 		System.out.println("Descrição: " + this.descricao);
 		System.out.println("Valor: " + this.valor);
 		System.out.println("Ativo: " + this.ativa);
+	}
+
+	public int getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
 	}
 }
