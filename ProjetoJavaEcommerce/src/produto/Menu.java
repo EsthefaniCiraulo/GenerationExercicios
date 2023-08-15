@@ -31,26 +31,37 @@ public class Menu {
 		Scanner leia = new Scanner(System.in);
 
 		int opcao;
+		
+        String menuArt = 
+        "  ___          ___    ___    __  __   __  __   ___   ___    ___   ___          \n" +
+        " | __|  ___   / __|  / _ \\  |  \\/  | |  \\/  | | __| | _ \\  / __| | __|         \n" +
+        " | _|  |___| | (__  | (_) | | |\\/| | | |\\/| | | _|  |   / | (__  | _|          \n" +
+        " |___|        \\___|  \\___/  |_|  |_| |_|  |_| |___| |_|_\\  \\___| |___|         \n" +
+        "   ___    ___    ____  ___   _  _   _  _     _       _____   ___    ___   _  _ \n" +
+        "  / __|  / _ \\  |_  / |_ _| | \\| | | || |   /_\\     |_   _| | __|  / __| | || |\n" +
+        " | (__  | (_) |  / /   | |  | .` | | __ |  / _ \\      | |   | _|  | (__  | __ |\n" +
+        "  \\___|  \\___/  /___| |___| |_|\\_| |_||_| /_/ \\_\\     |_|   |___|  \\___| |_||_|\n" +
+        "                                                                               ";
 
 		while (true) {
 
 			System.out.println(Cores.TEXT_CYAN + Cores.ANSI_BLACK_BACKGROUND
-					+ "*****************************************************");
-			System.out.println("                                                     ");
-			System.out.println("                 E-COMMERCE COZINHA-TECH             ");
-			System.out.println("                                                     ");
-			System.out.println("*****************************************************");
-			System.out.println("                                                     ");
-			System.out.println("            1 - Cadastrar Produto                    ");
-			System.out.println("            2 - Listar Produtos             	     ");
-			System.out.println("            3 - Buscar Produtos pelo código          ");
-			System.out.println("            4 - Editar Produto                       ");
-			System.out.println("            5 - Excluir Produto                      ");
-			System.out.println("            9 - Sair                                 ");
-			System.out.println("                                                     ");
-			System.out.println("*****************************************************");
-			System.out.println("Entre com a opção desejada:                          ");
-			System.out.println("                                                     ");
+					+ "*******************************************************************************");
+			System.out.println("                                                                               ");
+			System.out.println(menuArt);
+			System.out.println("                                                                               ");
+			System.out.println("*******************************************************************************");
+			System.out.println("                                                                               ");
+			System.out.println("            1 - Cadastrar Produto                                              ");
+			System.out.println("            2 - Listar Produtos             	                               ");
+			System.out.println("            3 - Buscar Produtos pelo código                                    ");
+			System.out.println("            4 - Editar Produto                                                 ");
+			System.out.println("            5 - Excluir Produto                                                ");
+			System.out.println("            9 - Sair                                                           ");
+			System.out.println("                                                                               ");
+			System.out.println("*******************************************************************************");
+			System.out.println("Entre com a opção desejada:                                                    ");
+			System.out.println("                                                                               ");
 
 			try {
 				opcao = leia.nextInt();
