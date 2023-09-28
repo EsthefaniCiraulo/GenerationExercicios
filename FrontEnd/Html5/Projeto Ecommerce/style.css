@@ -1,0 +1,143 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* Cor de fundo neutra */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilizar o cabeçalho */
+header {
+    background-color: #ff6b6b; /* Vermelho-claro */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilizar a navegação */
+nav a {
+    text-decoration: none;
+    color: #ffffff; /* Vermelho-claro */
+    margin: 0 10px;
+}
+
+
+/* Estilizar títulos */
+h1, h2 {
+    color: #ff6b6b; /* Vermelho-claro */
+}
+
+h1{
+    text-align: center;
+}
+
+/* Estilizar seção de produtos */
+section {
+    padding: 20px;
+}
+
+/* Estilizar lista de produtos */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+ul li img {
+    width: 250px;
+    height: auto;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+img{
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+/* Estilizar botões de adicionar ao carrinho e favoritos */
+button {
+    background-color: #ff6b6b; /* Vermelho-claro */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.item > button{
+    margin: 20px 0;
+    display: inline;
+}
+
+/* Estilizar tabela do carrinho */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ff6b6b; /* Vermelho-claro */
+}
+
+body button{
+    display: block;
+    margin:20px 10px 20px auto;
+}
+
+/* Estilizar botões de remover item e finalizar compra */
+.loginButton {
+    background-color: #ff6b6b; /* Vermelho-claro */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: inline;
+    font-size: 1rem;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+/* Estilizar rodapé */
+footer {
+    background-color: #ff6b6b; /* Vermelho-claro */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.invisivel{
+    display:none;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    width: 100%;
+
+}
+
+.input{
+    width: 100%;
+    flex-grow: 1;
+}

@@ -1,70 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce Carrinhos</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>E-commerce Carrinho</title>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="index.html">
-                Home
-            </a>
-            <a href="produtos.html">
-                Produtos
-            </a>
-            <a href="carrinho.html">
-                Carrinho
-            </a>
-            <button type="button">
-                Login
-            </button>
-        </nav>
+      <nav class="navbar">
+        <div>
+        <a href="index.html">Home</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="carrinho.html">Carrinho</a>
+        <a href="contato.html">Contato</a>
+      </div>
+          <button type="button" id="loginButton" class="loginButton">Login</button>
+          <label class="invisivel" id="lblNome"> asdasdassads</label>
+      </nav>
     </header>
     <h1>Itens Adicionados ao Carrinho</h1>
     <table>
-        <thead>
-            <tr>
-                <th>Codigo</th>
-                <th>Item</th>
-                <th>Quantidade</th>
-                <th>Valor Unitário</th>
-                <th>Valor Total</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Morango</td>
-                <td>2</td>
-                <td>R$10,00</td>
-                <td>R$20,00</td>
-                <td><button>Remover Item</button></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Maracuja</td>
-                <td>5kg</td>
-                <td>R$15,00/kg</td>
-                <td>R$75,00</td>
-                <td><button>Remover Item</button></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Verduras</td>
-                <td>10</td>
-                <td>R$5,00</td>
-                <td>R$50,00</td>
-                <td><button>Remover Item</button></td>
-            </tr>
-        </tbody>
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Item</th>
+          <th>Quantidade</th>
+          <th>Valor Unitário</th>
+          <th>Valor Total</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Morango</td>
+          <td>2</td>
+          <td>R$10,00</td>
+          <td>R$20,00</td>
+          <td><button>Remover Item</button></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Maracuja</td>
+          <td>5kg</td>
+          <td>R$15,00/kg</td>
+          <td>R$75,00</td>
+          <td><button>Remover Item</button></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Verduras</td>
+          <td>10</td>
+          <td>R$5,00</td>
+          <td>R$50,00</td>
+          <td><button>Remover Item</button></td>
+        </tr>
+      </tbody>
     </table>
-    <button>Finalizar Compra</button>
+    <div>
+      <button>Finalizar Compra</button>
+    </div>
     <footer>
         <p>Desenvolvido por Esthefani Ciraulo</p>
-        <p>Copyright 2023 Direiros Autorais©</p>
+        <p>&copy; 2023 Direitos Autorais | Loja Hortifruti - Todos os direitos reservados.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
+

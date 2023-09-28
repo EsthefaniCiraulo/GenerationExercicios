@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-commerce</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>E-commerce</title>  
+    
   </head>
   <body>
     <header>
-      <nav>
-        <a href="index.html"> Home </a>
-        <a href="produtos.html"> Produtos </a>
-        <a href="carrinho.html"> Carrinho </a>
-        <button type="button">Login</button>
+      <nav class="navbar">
+        <div>
+        <a href="index.html">Home</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="carrinho.html">Carrinho</a>
+        <a href="contato.html">Contato</a>
+      </div>
+          <button type="button" id="loginButton" class="loginButton">Login</button>
+          <label class="invisivel" id="lblNome"> asdasdassads</label>
       </nav>
     </header>
-    <h1>Bem vindo ao E-commerce Loja Hortifruit</h1>
-    <h2>
-      Sinta-se a vontade para comprar o que desejar, produtos fresquinhos
-      entregues rapidamente em sua casa!
-    </h2>
-    <section>
-      <h2>Nossos Produtos Principais</h2>
-      <ul>
-        <li>Morango <img src="Imagens/morango.jpg" /></li>
-        <li>Manga <img src="Imagens/manga.jpg" /></li>
-        <li>Maracujá<img src="Imagens/maracuja.jpg" /></li>
-        <li>Verduras e Legumes em Geral <img src="Imagens/verduras.jpg" /></li>
-      </ul>
+    <h1>Bem-vindo ao E-commerce Loja Hortifruit :)</h1>
+</nav>
+</header>
+<section>
+    <h2>Sobre Nós</h2>
+    <p>Somos uma empresa dedicada a divulgar nossas frutas e hortaliças incríveis.
+    <p>Sinta-se à vontade para comprar o que desejar, produtos fresquinhos entregues rapidamente em sua casa!</p>
+</section>
+       <section>
+        <h2>Nossos Produtos Principais</h2>
+        <ul>
+            <li><img src="Imagens/morango.avif" /><p>Morango</p></li>
+            <li><img src="Imagens/manga.jpg" /><p>Manga</p></li>
+            <li><img src="Imagens/maracuja.jpg" /><p>Maracujá</p></li>
+            <li><img src="Imagens/verduras.jpg" /><p>Verduras e Legumes em Geral </p></li>
+        </ul>
     </section>
     <footer>
         <p>Desenvolvido por Esthefani Ciraulo</p>
-        <p>Copyright 2023 Direiros Autorais©</p>
+        <p>&copy; 2023 Direitos Autorais | Loja Hortifruti - Todos os direitos reservados.</p>
     </footer>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
