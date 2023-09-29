@@ -1,0 +1,58 @@
+/* Importando Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/*Pseudo-Classe que indica o próprio HTML, utilizada geralmente para declarar váriaveis */
+:root{
+    --white-glass: #ffffff50;  /* Com uma cor branca com 50% de opacidade */
+}
+
+/* Reinicia as config. iniciais de CSS das páginas HTML */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* A propriedade CSS nos permite incluir o padding e o 
+					border na largura e altura total de um elemento */
+}
+
+.back-city{
+    width: 100vw;   /* Define que essa classe ocupa toda a largura da tela do navegado */
+    height: 100vh;  /* Define que essa classe ocupa toda a altura da tela do navegado */
+
+    display: flex;  /* Define a visualização da classe para Flex*/
+    justify-content: center;    /* Centraliza os conteúdos da classe ao seu centro de forma horizontalmente */
+    align-items: center;        /* Centraliza os conteúdos da classe ao seu centro de forma verticalmente */
+
+    background-image: url(../img/city.jpg); /* Define o plano de fundo da classe com uma imagem*/
+    background-size: cover;     /* Define o tamanho do plano de fundo, no caso a imagem será mostrada de forma inteira na classe */
+}
+
+.card{
+    width: 750px;
+    height: 250px;
+
+    display: flex;
+    justify-content: center;  /* Eixo horizontal */
+    align-items: center;    /* Eixo Vertical */
+}
+
+.glass{
+    /* Define que a Borda da DIV tenha 10px */
+    border: 10px solid #ffffff50;
+
+    /* Prop. que define um filtro que colocará um blur no fundo da classe */     
+    backdrop-filter: blur(8px);
+}
+
+.card p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #fff;
+	transition: font-size 1s; /* Prop. que define como uma transição irá ocorrer*/
+}
+
+/* Hover permite alterar as prop do Paragrafo quando colocamos o mouse em cima da tag P  */
+.card p:hover{ 
+    font-size: 40px;
+    font-weight: 700;
+}
