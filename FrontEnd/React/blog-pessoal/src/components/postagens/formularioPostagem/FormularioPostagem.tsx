@@ -1,4 +1,5 @@
-import React, { ChangeEvent, useContext, useEffect, useState } from 'react';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { ChangeEvent, useContext, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthContext';
 import Postagem from '../../../models/Postagem';
@@ -8,7 +9,7 @@ import { toastAlerta } from '../../../utils/toastAlerta';
 
 
 function FormularioPostagem() {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
   const { id } = useParams<{ id: string }>();
 
@@ -167,7 +168,7 @@ function FormularioPostagem() {
         </div>
         <div className="flex flex-col gap-2">
           <p>Tema da postagem</p>
-          <select name="tema" id="tema" className='border p-2 border-slate-800 rounded' onChange={(e) => buscarTemaPorId(e.currentTarget.value)}>
+          <select title="options" name="tema" id="tema" className='border p-2 border-slate-800 rounded' onChange={(e) => buscarTemaPorId(e.currentTarget.value)}>
             <option value="" selected disabled>Selecione um tema</option>
             {temas.map((tema) => (
               <>

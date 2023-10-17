@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useEffect, useState } from 'react'
+import { ChangeEvent, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Usuario from '../../models/Usuario'
 import { cadastrarUsuario } from '../../services/Service'
@@ -7,7 +7,7 @@ import { toastAlerta } from '../../utils/toastAlerta'
 
 function Cadastro() {
 
-  let navigate = useNavigate()
+  const navigate = useNavigate()
 
   const [confirmaSenha, setConfirmaSenha] = useState<string>("")
 

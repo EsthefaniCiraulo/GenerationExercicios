@@ -1,11 +1,11 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../contexts/AuthContext'
 import { toastAlerta } from '../../utils/toastAlerta'
 
 
 function Navbar() {
-  let navigate = useNavigate()
+  const navigate = useNavigate()
 
     const { usuario, handleLogout } = useContext(AuthContext)
 
